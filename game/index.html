@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HANSZY COIN RUSH — satu prompt, satu game</title>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #0b0e14; overflow: hidden; }
+  #game { display: block; width: 100vw; height: 100vh; touch-action: none; }
+  #hint {
+    position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%);
+    font: 600 15px/1.4 system-ui, sans-serif; color: #8ef5e3; opacity: 0.75;
+    background: rgba(11, 14, 20, 0.6); padding: 6px 14px; border-radius: 999px;
+    border: 1px solid rgba(142, 245, 227, 0.35); pointer-events: none; white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hint">Gerakkan kucing: panah / WASD &mdash; kumpulkan koin emas sebelum waktu habis!</div>
+<script src="game.js"></script>
+</body>
+</html>
